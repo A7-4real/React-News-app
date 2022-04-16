@@ -2,8 +2,6 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 
 export class NavBar extends Component {
-  static propTypes = {};
-
   render() {
     return (
       <div>
@@ -24,15 +22,57 @@ export class NavBar extends Component {
               <a className="navbar-brand" href="#">
                 SSS News app
               </a>
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
+              <ul
+                className="navbar-nav me-auto mb-2 mb-lg-0 dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li className="nav-item dropdown-item">
+                  <a
+                    className="nav-link active dropdown-toggle"
+                    aria-current="page"
+                    href="#"
+                  >
                     Home
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
+                <li className="nav-item dropdown-item">
+                  <a className="nav-link" href="/about">
                     About
+                  </a>
+                </li>
+                <li className="nav-item dropdown-item">
+                  <a className="nav-link" href="/business">
+                    Business
+                  </a>
+                </li>
+                <li className="nav-item dropdown-item">
+                  <a className="nav-link" href="/entertainment">
+                    Entertainment
+                  </a>
+                </li>
+                <li className="nav-item dropdown-item">
+                  <a className="nav-link" href="/general">
+                    General
+                  </a>
+                </li>
+                <li className="nav-item dropdown-item">
+                  <a className="nav-link" href="/health">
+                    Health
+                  </a>
+                </li>
+                <li className="nav-item dropdown-item">
+                  <a className="nav-link" href="/science">
+                    Science
+                  </a>
+                </li>
+                <li className="nav-item dropdown-item">
+                  <a className="nav-link" href="/sports">
+                    Sports
+                  </a>
+                </li>
+                <li className="nav-item dropdown-item">
+                  <a className="nav-link" href="/technology">
+                    Technology
                   </a>
                 </li>
               </ul>
