@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class NavBar extends Component {
   render() {
@@ -19,61 +20,56 @@ export class NavBar extends Component {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a className="navbar-brand" href="#">
+              <Link className="navbar-brand" to="#">
                 SSS News app
-              </a>
+              </Link>
               <ul
                 className="navbar-nav me-auto mb-2 mb-lg-0 dropdown-menu-dark"
                 aria-labelledby="navbarDarkDropdownMenuLink"
               >
                 <li className="nav-item dropdown-item">
-                  <a
+                  <Link
                     className="nav-link active dropdown-toggle"
                     aria-current="page"
-                    href="#"
+                    to="/"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown-item">
-                  <a className="nav-link" href="/about">
-                    About
-                  </a>
-                </li>
-                <li className="nav-item dropdown-item">
-                  <a className="nav-link" href="/business">
+                  <Link className="nav-link" to="/business">
                     Business
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown-item">
-                  <a className="nav-link" href="/entertainment">
+                  <Link className="nav-link" to="/entertainment">
                     Entertainment
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown-item">
-                  <a className="nav-link" href="/general">
+                  <Link className="nav-link" to="/">
                     General
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown-item">
-                  <a className="nav-link" href="/health">
+                  <Link className="nav-link" to="/health">
                     Health
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown-item">
-                  <a className="nav-link" href="/science">
+                  <Link className="nav-link" to="/science">
                     Science
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown-item">
-                  <a className="nav-link" href="/sports">
+                  <Link className="nav-link" to="/sports">
                     Sports
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown-item">
-                  <a className="nav-link" href="/technology">
+                  <Link className="nav-link" to="/technology">
                     Technology
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <form className="d-flex">
