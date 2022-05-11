@@ -355,9 +355,6 @@ export class News extends Component {
     return (
       <div className="container my-3">
         {this.state.loading && <Spinner />}
-        <div className="text-center">
-          <img className="text-center" src={sssLoader}></img>
-        </div>
 
         <h1 className="d-flex justify-content-center fw-bolder mt-3 mb-3">
           Top Headlines
