@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
 import PropTypes from "prop-types";
-import sssLoader from "../sssLoader.gif";
 
 export class News extends Component {
   static defaultProps = {
