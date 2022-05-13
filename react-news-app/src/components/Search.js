@@ -47,31 +47,7 @@ function Search() {
       <h1 className="text-center">Search</h1>
       <h2>Matched Image - </h2>
       <img src={path} alt={path} width="300" height="200" />
-      <div className="text-center">
-        {metadata.map((Element) => {
-          return (
-            <div>
-              <h3>{Element.heading}</h3>
-              <br></br>
-              <p>{Element.context}</p>
-              <div className="related-image">
-                {Element.img_url.map((element) => {
-                  return (
-                    <div>
-                      <img
-                        src={element}
-                        alt={element}
-                        width="150"
-                        height="100"
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          );
-        })}
-      </div>
+
       {/* <h3 className="text-center">
         {articles.map((Element) => {
           return (
