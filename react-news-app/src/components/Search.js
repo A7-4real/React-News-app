@@ -48,6 +48,13 @@ function Search() {
       <h2>Matched Image - </h2>
       <img src={path} alt={path} width="300" height="200" />
 
+      <h4>{metadata.src}</h4>
+      <h1>{metadata.heading}</h1>
+      <p>{metadata.context}</p>
+      {metadata.img_url.map((element) => {
+        return <img src={element} width="150" height="100" />;
+      })}
+
       {/* <h3 className="text-center">
         {articles.map((Element) => {
           return (
