@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/react-news-app/node_modules
 /.pnp
 .pnp.js
 
